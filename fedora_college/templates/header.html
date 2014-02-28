@@ -15,9 +15,9 @@
             <li id="indexTab"><a href="{{  url_for('admin.index') }}">Home</a></li>
             <li id="ScreenCastsTab"><a href="{{  url_for('admin.screencast'  )}}">Add ScreenCast</a></li>
           {% else %}
-            <li id="indexTab"><a href="">Home</a></li>
-            <li id="ScreenCastsTab"><a href="">Fedora ScreenCasts</a></li>
-            <li id="AboutTab"><a href="">About</a></li>
+            <li id="indexTab"><a href="/home">Home</a></li>
+            <li id="ScreenCastsTab"><a href="/screencasts">Fedora ScreenCasts</a></li>
+            <li id="AboutTab"><a href="/about">About</a></li>
             {% if is_admin %}
             <li id="adminTab"><a href="{{  url_for('admin.index')}}">Admin</a></li>
             {% endif %}
