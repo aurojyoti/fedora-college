@@ -28,5 +28,5 @@ Paver==1.2.1
 colorama==0.2.5
 
 # Development
+flask==0.8
 flask-sqlalchemy
-flask
