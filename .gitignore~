@@ -1,0 +1,118 @@
+# Emacs rope configuration
+.ropeproject
+.project
+.pydevproject
+.settings
+
+# Python
+*.py[co]
+
+## Packages
+=======
+*.py[cod]
+*.pyc
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+<<<<<<< HEAD
+deb_dist
+develop-eggs
+.installed.cfg
+
+## Installer logs
+pip-log.txt
+
+## Unit test / coverage reports
+.coverage
+.tox
+
+## Translations
+*.mo
+
+## paver generated files
+/paver-minilib.zip
+=======
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# DB Sqlite
+*.db
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+*.sublime*
+
+
+
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+#Project files
+[Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+
+.~
