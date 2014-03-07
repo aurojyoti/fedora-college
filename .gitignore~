@@ -115,4 +115,4 @@ _ReSharper*/
 # Office Temp Files
 ~$*
 
-.~
+*.~
