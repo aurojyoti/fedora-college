@@ -3,9 +3,6 @@ from fedora_college.core.database import db
 '''
 Updated Models / Uploading ER diagram soon.
 '''
-
-
-'''
 class UserProfile(db.Model):
     __tablename__ = 'profile'
 
@@ -77,17 +74,17 @@ class Comments(db.Model):
         self.parent = parent
         self.date_added = date_added
 
-class Comment_map_content()	
-   __tablename__ = 'map_comments'
+class Comment_map_content(db.Model):	
+   __tablename__ = 'comment_map_content'
     
-    comment_id = db.Column(db.Integer, primary_key=True)
-    content_id = db.Column(db.Integer)
+   no =db.Column(db.Integer, primary_key=True)
+   comment_id = db.Column(db.Integer,db.ForeignKey(Comments.comment_id))
+   content_id = db.Column(db.Integer,db.ForeignKey(Content.content_id))
     
-    def __init__(self,comment_id,content_id):
-        self.comment_id = comment_id
-        self.content_id = content_id
+   def __init__(self,comment_id,content_id):
+       self.comment_id = comment_id
+       self.content_id = content_id
 
-'''
 class Screencast(db.Model):
     __tablename__ = 'screencast'
 
@@ -109,3 +106,4 @@ class Screencast(db.Model):
 
     def __repr__(self):
         return '<Title %s' % self.title
+
